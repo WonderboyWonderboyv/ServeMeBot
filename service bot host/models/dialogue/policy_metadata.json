@@ -1,0 +1,134 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "email",
+        "appliance",
+        "pincode",
+        "address",
+        "serialnumber",
+        "date",
+        "name",
+        "timeslots",
+        "phonenumber",
+        "modelnumber",
+        "trackid",
+        "issue"
+      ]
+    },
+    "action_query_detail": {
+      "slots": [
+        "trackid"
+      ]
+    },
+    "action_restart": {
+      "slots": []
+    },
+    "action_complain_modify_get_timeslots": {
+      "slots": [
+        "time1",
+        "time3",
+        "time2"
+      ]
+    },
+    "action_complain_modify_set_timeslots": {
+      "slots": [
+        "time1",
+        "time2",
+        "time3"
+      ]
+    },
+    "action_complain_modify_get_time": {
+      "slots": [
+        "time1",
+        "time2",
+        "time3"
+      ]
+    },
+    "action_complain_modify_set_time": {
+      "slots": [
+        "time",
+        "time1",
+        "time2",
+        "time3"
+      ]
+    },
+    "action_get_complaint_detail": {
+      "slots": [
+        "confirmcomplain",
+        "email",
+        "appliance",
+        "pincode",
+        "address",
+        "time",
+        "serialnumber",
+        "date",
+        "time1",
+        "requested_slot",
+        "name",
+        "time2",
+        "timeslots",
+        "phonenumber",
+        "technician",
+        "modelnumber",
+        "time3",
+        "trackid",
+        "issue"
+      ]
+    },
+    "action_get_geo_location": {
+      "slots": [
+        "pincode",
+        "address"
+      ]
+    },
+    "action_set_geo_location": {
+      "slots": [
+        "address",
+        "pincode"
+      ]
+    },
+    "action_get_timeslots": {
+      "slots": [
+        "time1",
+        "time2",
+        "time3"
+      ]
+    },
+    "action_set_timeslots": {
+      "slots": [
+        "time",
+        "time1",
+        "time2",
+        "time3"
+      ]
+    },
+    "action_complain_modify_check_track_id": {
+      "slots": [
+        "trackid"
+      ]
+    },
+    "utter_greet": {
+      "slots": []
+    },
+    "action_cancel_complain": {
+      "slots": [
+        "trackid"
+      ]
+    },
+    "utter_goodbye": {
+      "slots": []
+    }
+  },
+  "rasa_core": "0.11.8",
+  "python": "3.6.2",
+  "max_histories": [
+    4,
+    5
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "policy.BotPolicy"
+  ]
+}
